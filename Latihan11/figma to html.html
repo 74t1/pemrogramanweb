@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budi SJ - Product Designer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #0a0a0c;
+        color: #ffffff;
+      }
+      header {
+        background: url(bg_banner.png) no-repeat center/cover;
+        height: 439px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .profile-pic {
+        width: 113px;
+        height: 113px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+
+        border-radius: 100px;
+        border: 3px solid rgba(21, 52, 164, 0.3);
+      }
+      .name {
+        color: #fff;
+        text-align: center;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 33px;
+      }
+      .role {
+        color: #c4c4c5;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        margin-top: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .tagline {
+        color: #c4c4c5;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 8px;
+        line-height: normal;
+      }
+      .specialty-section {
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+      .specialty-section h2 {
+        color: #c4c4c5;
+        text-align: center;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .specialty-section h2 span {
+        color: #194bfd;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .specialty-section p {
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        color: #616162;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .cards {
+        display: flex;
+        margin-top: 73px;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .card {
+        background-color: #0e0e10;
+        padding: 2rem;
+        text-align: center;
+
+        width: 366px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+      .card i {
+        font-size: 2rem;
+        color: #a259ff;
+        margin-bottom: 1rem;
+      }
+      .card h4 {
+        color: #c4c4c5;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        margin-top: 21px;
+        font-style: normal;
+        margin-bottom: 0px;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .card p {
+        width: 261px;
+        color: #c4c4c5;
+        text-align: center;
+        font-family: Inter;
+        margin-top: 21px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .svgicon {
+        width: 39px;
+        height: 39px;
+        border-radius: 100px;
+        background-color: #212122;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      .svgicon path {
+        fill: none;
+        stroke: #b419fd;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .svgline {
+        width: 37px;
+        height: 3px;
+        margin-top: 21px;
+        fill: none;
+      }
+      .svgline path {
+        stroke: #1534a4;
+        stroke-width: 3;
+        stroke-linecap: round;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img_profile.png" alt="Budi SJ" class="profile-pic" />
+      <div class="name">Budi SJ</div>
+      <div class="role">Product Designer</div>
+      <div class="tagline">Turning complexity into simplicity</div>
+    </header>
+
+    <section class="specialty-section">
+      <p>SPECIALITY</p>
+      <h2>My <span>specialities</span></h2>
+      <p>
+        Combining user research, design systems, and iterative prototyping to
+        solve complex problems with simple, effective design solutions
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <svg class="svgicon" viewBox="0 0 50 50">
+            <path
+              d="M9.53001 16.122C9.26839 15.4771 8.79068 14.9431 8.17868 14.6117C7.56668 14.2802 6.85848 14.1719 6.17538 14.3052C5.49228 14.4385 4.87678 14.8052 4.43431 15.3424C3.99184 15.8797 3.74993 16.554 3.75001 17.25C3.75001 17.5581 3.68673 17.863 3.56409 18.1456C3.44145 18.4283 3.26206 18.6827 3.03705 18.8932C2.81204 19.1037 2.5462 19.2657 2.256 19.3692C1.9658 19.4727 1.65743 19.5156 1.35001 19.495C1.84445 20.354 2.60864 21.0257 3.52393 21.4058C4.43922 21.786 5.45441 21.8533 6.4119 21.5974C7.3694 21.3415 8.21562 20.7767 8.81922 19.9906C9.42281 19.2045 9.75001 18.2411 9.75001 17.25C9.75001 16.851 9.67201 16.47 9.53001 16.122ZM9.53001 16.122C10.719 15.7169 11.8562 15.1732 12.918 14.502M7.87501 14.477C8.28021 13.2855 8.82465 12.1459 9.49701 11.082M12.917 14.502C14.8134 13.3039 16.4365 11.7203 17.681 9.85401L21.557 4.04001C21.7055 3.81857 21.7725 3.55246 21.7466 3.28711C21.7207 3.02176 21.6034 2.77363 21.4149 2.58511C21.2264 2.39658 20.9783 2.27935 20.7129 2.25344C20.4476 2.22752 20.1814 2.29453 19.96 2.44301L14.146 6.32001C12.2795 7.56415 10.6956 9.18694 9.49701 11.083C11.0189 11.7635 12.2365 12.9811 12.917 14.503"
+              transform="translate(10, 10) scale(1.2)"
+            />
+          </svg>
+          <h4>UI/UX Design</h4>
+          <svg class="svgline">
+            <path d="M0 1.5H36.5" />
+          </svg>
+          <p>
+            Creating intuitive and purposeful interfaces that enhance user
+            experience and deliver real value.
+          </p>
+        </div>
+        <div class="card">
+          <svg class="svgicon" viewbox="0 0 50 50">
+            <path
+              d="M9.75 3.10402V8.81802C9.75 9.1135 9.69181 9.40608 9.57874 9.67906C9.46567 9.95205 9.29993 10.2001 9.091 10.409L5 14.5M9.75 3.10402C9.499 3.12702 9.249 3.15402 9 3.18602M9.75 3.10402C11.2468 2.96484 12.7532 2.96484 14.25 3.10402M5 14.5L5.77 14.307C7.863 13.7898 10.0718 14.0355 12 15C13.9282 15.9645 16.137 16.2102 18.23 15.693L19.8 15.3M5 14.5L2.798 16.703C1.565 17.934 2.147 20.02 3.865 20.313C6.509 20.765 9.227 21 12 21C14.7262 21.001 17.4476 20.7711 20.135 20.313C21.852 20.02 22.434 17.934 21.202 16.702L19.8 15.3M14.25 3.10402V8.81802C14.25 9.41502 14.487 9.98802 14.909 10.409L19.8 15.3M14.25 3.10402C14.501 3.12702 14.751 3.15402 15 3.18602"
+              transform="translate(10, 10) scale(1.2)"
+            />
+          </svg>
+          <h4>Lean MVP Execution</h4>
+          <svg class="svgline">
+            <path d="M0 1.5H36.5" />
+          </svg>
+          <p>
+            Rapidly turning ideas into functional prototypes to validate
+            concepts and reduce development risks.
+          </p>
+        </div>
+        <div class="card">
+          <svg class="svgicon" viewbox="0 0 50 50">
+            <path
+              d="M15.59 14.37C15.7982 15.2511 15.8044 16.1678 15.608 17.0516C15.4116 17.9354 15.0177 18.7633 14.4559 19.4732C13.8941 20.1832 13.1789 20.7568 12.364 21.1511C11.549 21.5454 10.6553 21.7501 9.75 21.75V16.95M15.59 14.37C17.4999 12.9788 19.0536 11.1555 20.1242 9.04908C21.1947 6.94267 21.7519 4.61287 21.75 2.25C19.3873 2.2483 17.0577 2.80549 14.9515 3.87607C12.8452 4.94665 11.0221 6.50026 9.631 8.41M15.59 14.37C13.8519 15.6413 11.8603 16.5214 9.75 16.95M9.75 16.95C9.647 16.971 9.543 16.991 9.439 17.01C8.53179 16.2906 7.71038 15.4692 6.991 14.562C7.00989 14.4578 7.02889 14.3538 7.05 14.25M9.631 8.41C8.74986 8.2016 7.83298 8.19532 6.94907 8.39164C6.06516 8.58797 5.23714 8.98179 4.52707 9.54362C3.817 10.1054 3.2433 10.8207 2.84895 11.6357C2.4546 12.4508 2.24984 13.3446 2.25 14.25H7.05M9.631 8.41C8.35988 10.1478 7.47875 12.14 7.05 14.25M4.811 16.64C4.15318 17.1292 3.64173 17.789 3.33202 18.548C3.02232 19.307 2.92618 20.1363 3.054 20.946C3.86383 21.0737 4.69316 20.9774 5.45218 20.6675C6.21119 20.3577 6.87095 19.846 7.36 19.188M16.5 9C16.5 9.39783 16.342 9.77936 16.0607 10.0607C15.7794 10.342 15.3978 10.5 15 10.5C14.6022 10.5 14.2206 10.342 13.9393 10.0607C13.658 9.77936 13.5 9.39783 13.5 9C13.5 8.60218 13.658 8.22065 13.9393 7.93934C14.2206 7.65804 14.6022 7.5 15 7.5C15.3978 7.5 15.7794 7.65804 16.0607 7.93934C16.342 8.22065 16.5 8.60218 16.5 9Z"
+              transform="translate(10, 10) scale(1.2)"
+            />
+          </svg>
+          <h4>App Development</h4>
+          <svg class="svgline">
+            <path d="M0 1.5H36.5" />
+          </svg>
+          <p>
+            Building responsive, user-focused digital products that work
+            seamlessly across platforms.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
