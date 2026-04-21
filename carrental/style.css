@@ -9,6 +9,10 @@
     flex-direction: column;
 }
 
+body {
+    margin: 0;
+}
+
 .title {
     color: white;
     text-align: center;
@@ -26,6 +30,7 @@
 
 .title hr {
     width: 50em;
+    max-width: 90vw;
     border: 1px solid white;
     margin: 3em auto;
     opacity: 0.5;
@@ -59,4 +64,36 @@
     background-color: #ff5722;
     color: white;
     cursor: pointer;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5em;
+    align-content: center;
+    padding: 2em 1em;
+    align-items: start;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.car-list h2 {
+    font-size: 2em;
+    margin: 2em 0;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.car-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(22rem, 100%);
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
